@@ -1,0 +1,106 @@
+.about-section {
+  padding: 2rem var(--b-pad);
+}
+.about-container,
+.about-container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+.left-img-container {
+  flex: 0 4 500px;
+  background: url("/open-source.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+.left-img-1 {
+  flex: 0 4 600px;
+  background: url("/on-chain-img.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right-content-container {
+  flex: 5;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.heading {
+  text-align: inherit;
+  color: var(--clr-primary);
+  font-size: var(--ft-800);
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+.about {
+  color: var(--clr-primary);
+  text-align: inherit;
+  font-size: var(--ft-350);
+  font-weight: 400;
+  letter-spacing: 0.28px;
+}
+
+.left-content-container {
+  flex: 5;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.right-user-container {
+  flex: 0 4 600px;
+  background: url("/cross-chain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  color: var(--clr-primary);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  display: block;
+}
+@media (width < 1200px) {
+  .about-container,
+  .about-container-2 {
+    gap: 4rem;
+  }
+}
+
+@media (width < 880px) {
+  .about-container-2 {
+    flex-direction: column-reverse;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .right-user-container {
+    flex: none;
+    width: 100%;
+    height: 300px;
+  }
+  .left-img-container {
+    flex: none;
+    width: 100%;
+    height: 300px;
+  }
+  .right-content-container {
+    text-align: left;
+    align-items: flex-start;
+  }
+}

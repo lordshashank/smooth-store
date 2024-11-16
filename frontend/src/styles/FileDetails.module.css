@@ -1,0 +1,119 @@
+.file-details-container {
+  background: var(--bg-primary);
+}
+.close-btn {
+  all: unset;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: block;
+}
+.preview-img {
+  width: 100%;
+  height: auto;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.actions {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.actions > div,
+.actions > a,
+.actions > button {
+  flex: 1;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.actions > button:disabled {
+  cursor: not-allowed;
+}
+
+.file-name {
+  margin: 2rem 0;
+}
+.file-name > h6,
+.file-info > h6,
+.share > h6 {
+  color: var(--clr-secondary);
+
+  font-size: var(--ft-300);
+
+  font-weight: 500;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-name > p,
+.file-size > p {
+  color: #aeb9e1;
+  font-size: var(--ft-200);
+  font-weight: 400;
+  line-height: 150%;
+}
+.file-name > p {
+  word-break: break-all;
+}
+.file-size > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-info {
+  margin: 2rem 0;
+}
+.file-info > h6 {
+  margin-bottom: 1rem;
+}
+.file-size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.share > h6 {
+  margin-bottom: 2rem;
+}
+.user-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.view-deal-button {
+  display: block;
+  border: none;
+  padding: 0.6rem;
+  color: #000;
+  font-size: var(--ft-250);
+  font-weight: 500;
+  line-height: 136%;
+  border-radius: 24px;
+  background: #f1f1f1;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.view-deal-button:hover {
+  box-shadow: 1px 1px 5px var(--bg-primary);
+  transform: translate(-1px, -1px);
+}

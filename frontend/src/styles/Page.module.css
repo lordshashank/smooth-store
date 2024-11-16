@@ -1,0 +1,6 @@
+.main {
+  color: var(--clr-primary);
+  background-color: #081028;
+  /* max-width: 1600px; */
+  margin: auto;
+}

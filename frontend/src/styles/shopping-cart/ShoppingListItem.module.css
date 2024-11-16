@@ -1,0 +1,76 @@
+.files-list-item {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: #0a1330;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+}
+.files-list-item:hover {
+  transform: translate(-5px, -5px);
+}
+.close {
+  all: unset;
+  cursor: pointer;
+  background: url("/icons/trash.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15px;
+  min-width: 15px;
+  height: 20px;
+}
+.right {
+  width: min(100%, 500px);
+}
+.name-remove {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.details > a {
+  color: var(--clr-secondary);
+  font-size: var(--ft-300);
+  font-weight: 500;
+  display: block;
+  width: 300px;
+  line-height: 150%;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.details > p {
+  color: #aeb9e1;
+  font-size: var(--ft-250);
+  font-weight: 400;
+  line-height: 150%;
+}
+.info > h3 {
+  color: #aeb9e1;
+  font-size: var(--ft-250);
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+.size,
+.start-date {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.size > p:nth-child(1),
+.start-date > label {
+  color: #aeb9e1;
+  font-size: var(--ft-250);
+  font-weight: 500;
+  line-height: 150%;
+  white-space: nowrap;
+}
+.size > p:nth-child(2) {
+  color: #aeb9e1;
+  font-size: var(--ft-250);
+  font-weight: 500;
+  line-height: 150%;
+}

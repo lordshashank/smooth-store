@@ -1,0 +1,54 @@
+.file-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.diff-bg {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  border-radius: 28px 28px 0px 0px;
+  transition: background-color 0.2s ease-out;
+}
+.diff-bg:hover {
+  background-color: var(--bg-accent);
+}
+.file-container.active-file > .diff-bg {
+  background-color: var(--bg-accent);
+}
+.name-user > h4 {
+  color: #000;
+  font-size: var(--ft-350);
+  font-weight: 500;
+  line-height: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+.name-user > p {
+  color: #c0c1cc;
+  font-size: var(--ft-250);
+  font-weight: 500;
+  line-height: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size-user {
+  padding: 0 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.size-user > p {
+  color: #000;
+  font-size: var(--ft-350);
+  font-weight: 500;
+  line-height: 150%;
+}

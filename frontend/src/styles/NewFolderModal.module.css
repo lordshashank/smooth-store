@@ -1,0 +1,30 @@
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.modal-buttons > button,
+.modal-buttons > a {
+  border: none;
+  background: transparent;
+  color: var(--clr-accent-light);
+  font-size: var(--ft-350);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.1s ease-in;
+}
+
+.modal-buttons > button:hover,
+.modal-buttons > a:hover {
+  background-color: var(--bg-accent);
+}
+.form > input {
+  padding: 0.5rem;
+  width: 300px;
+}
+.spinner-wrapper {
+  padding: 0rem 1.5rem;
+}
