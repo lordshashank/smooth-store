@@ -1,0 +1,11 @@
+.file-size-warning {
+    color: red;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        157deg,
+        rgba(0, 0, 0, 0.06) 14.92%,
+        rgba(0, 0, 0, 0) 170.09%
+    );
+    border-radius: 10px;
+    padding: 1rem;
+}

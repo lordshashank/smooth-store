@@ -1,0 +1,44 @@
+.heading {
+  color: #ff494a !important;
+}
+.words {
+  font-size: var(--ft-300);
+  color: var(--clr-accent-light);
+  margin-bottom: 1.5rem;
+}
+
+.words > a {
+  color: var(--a-clr);
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.close > button,
+.switch-btn {
+  border: none;
+  background: transparent;
+  color: var(--clr-accent-light);
+  font-size: var(--ft-350);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.1s ease-in;
+}
+
+.switch-btn {
+  padding: 0;
+  color: var(--clr-dark);
+  transition: all 0.1s ease-in;
+}
+
+.switch-btn:hover {
+  text-decoration: underline;
+}
+
+.close > button:hover {
+  background-color: var(--bg-accent);
+}

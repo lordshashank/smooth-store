@@ -1,0 +1,39 @@
+.selected {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background-color: var(--bg-accent);
+  margin: 1rem 2rem 0rem 2rem;
+  border-radius: 40px;
+  padding: 0.3rem;
+}
+.selected > p {
+  color: #000;
+}
+.info {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.close-icon:hover,
+.vertical-icon:hover {
+  background-color: #cdcbf2;
+}
+.vertical-icon {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}

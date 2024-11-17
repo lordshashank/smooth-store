@@ -1,0 +1,8 @@
+.files-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  list-style: none;
+}

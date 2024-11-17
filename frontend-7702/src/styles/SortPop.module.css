@@ -1,0 +1,61 @@
+.context-menu {
+  background-color: var(--bg-accent-light);
+  list-style: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transform-origin: 0 0;
+  animation: increase 0.1s linear;
+  width: 150px;
+  z-index: 1000;
+  border-radius: 4px;
+  position: absolute;
+  top: 80%;
+  right: 1%;
+}
+.options-menu {
+  background-color: var(--bg-accent-light);
+  list-style: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transform-origin: 0 0;
+  animation: increase 0.1s linear;
+  width: 300px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+.context-menu > li,
+.options-menu > li {
+  cursor: pointer;
+  color: var(--clr-secondary);
+  font-size: var(--ft-250);
+  font-weight: 500;
+  line-height: 150%;
+}
+.context-menu > li:hover,
+.options-menu > li:hover {
+  background-color: var(--bg-accent);
+}
+.new-folder-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.context-menu > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.options-menu > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+@keyframes increase {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

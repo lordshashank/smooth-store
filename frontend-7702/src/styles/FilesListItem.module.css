@@ -1,0 +1,153 @@
+.files-list-item {
+  cursor: pointer;
+  background-color: #0b1739;
+  /* border-radius: 28px; */
+  transition: background-color 0.2s ease-in;
+}
+.files-list-item:nth-of-type(even) {
+  background-color: #0a1330;
+}
+.files-list-item:hover {
+  background-color: #0a1330;
+}
+/* .files-list-item.active-file {
+  background-color: var(--bg-accent);
+} */
+.files-list-item > p {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heading-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+.heading-wrapper > h4 {
+  flex: 1;
+  color: var(--clr-secondary);
+  font-size: 12px;
+  /* max-width: 500px; */
+  font-weight: 500;
+  line-height: 14px;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.except-size {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.file-expire {
+  flex: 0 0 165px;
+}
+.folder-last-modified {
+  flex: 0 0 165px;
+}
+.file-size {
+  flex: 0 0 88px;
+}
+.file-status {
+  flex: 0 0 100px;
+}
+
+.file-status.pending {
+  color: #aeb9a1;
+}
+.file-status.active {
+  color: green;
+}
+.file-status.expiring {
+  color: rgb(180, 169, 10);
+}
+.file-status.expired {
+  color: red;
+}
+.file-actions-group {
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.file-actions {
+  all: unset;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .file-actions:hover {
+  background-color: var(--bg-accent-light);
+  background-color: #fff;
+} */
+
+@media (width < 1400px) {
+  .file-expire {
+    flex-basis: 120px;
+  }
+  .file-size {
+    flex-basis: 80px;
+  }
+  .file-status {
+    flex-basis: 80px;
+  }
+}
+@media (width < 1170px) {
+  .file-expire {
+    flex-basis: 90px;
+  }
+  .file-size {
+    flex-basis: 70px;
+  }
+  .file-status {
+    flex-basis: 60px;
+  }
+  .folder-last-modified {
+    flex: 0 0 140px;
+  }
+  .files-list > li:not(:first-child) > p {
+    font-size: 10px;
+  }
+  .files-list > li:nth-child(1) > p {
+    font-size: 10px;
+  }
+}
+
+@media (width < 1000px) {
+  .file-expire {
+    flex-basis: 80px;
+  }
+  .file-size {
+    flex-basis: 60px;
+  }
+  .file-status {
+    flex-basis: 50px;
+  }
+  .files-list > li:not(:first-child) > p {
+    font-size: 10px;
+  }
+  .files-list > li:nth-child(1) > p {
+    font-size: 10px;
+  }
+}
+
+.file-actions-group > .tool-tip {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+}
